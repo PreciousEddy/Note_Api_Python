@@ -6,7 +6,8 @@ from .serializers import NotesSerializer, RegistrationSerializer
 from rest_framework.decorators import api_view
 from rest_framework import status
 from rest_framework.authtoken.models import Token
-
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 # Create your views here.
 
 @api_view(['GET', 'POST'])
@@ -74,7 +75,10 @@ def note_detail(request, pk, format=None):
     
     
     
-
+@swagger_auto_schema(request_body=RegistrationSerializer)
+def post(self, request, *args, **kwargs):
+    context = {}
+    
 @api_view(['POST'])
 def register(request):
     
@@ -100,3 +104,4 @@ def register(request):
             data = serializer.errors
             
         return Response(data)
+    
