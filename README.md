@@ -17,3 +17,8 @@ delete notes.
 - Deploy your API/endpoint to a backend service (e.g DigitalOcean) and
 provide link
 
+![Login](https://github.com/PreciousEddy/Note_Api_Python/blob/main/Images/Login.png)
+
+![NoteDetail](https://github.com/PreciousEddy/Note_Api_Python/blob/main/Images/NoteDetail.png)
+
+![NoteList](https://github.com/PreciousEddy/Note_Api_Python/blob/main/Images/NotesList.png)
